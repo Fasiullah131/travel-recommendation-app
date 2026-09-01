@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wayfarer — Travel Recommendations</title>
+<meta name="description" content="Wayfarer helps you find beaches, temples, and countries worth building a trip around.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Way<span>farer</span></a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+    <form class="nav-search" role="search" aria-label="Search destinations">
+      <input type="search" placeholder="Search beaches, temples, countries…" aria-label="Search destinations">
+      <button type="submit" aria-label="Run search">→</button>
+    </form>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="search-results"></div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-kicker">A field guide for restless travellers</p>
+      <h1>Find the place worth the flight.</h1>
+      <p>Wayfarer is a small, opinionated guide to the beaches, temples, and countries our team has actually visited — no filler lists, just the places that earned a second trip.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#beaches">Browse recommendations</a>
+        <a class="btn btn-ghost" href="about.html">Why we built this</a>
+      </div>
+    </div>
+    <figure class="hero-image">
+      <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80" alt="Turquoise water and limestone cliffs along a coastline">
+      <figcaption>Railay Beach, Thailand</figcaption>
+    </figure>
+  </section>
+
+  <section class="section" id="beaches">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-num">Recommendation 01</p>
+          <h2>Beaches worth the sunburn</h2>
+          <p>Two coastlines that changed how we think about a beach day.</p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="dest-card" id="beach-1">
+          <div class="imgs">
+            <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=700&q=80" alt="Granite boulders framing a white sand beach at Anse Source d'Argent">
+            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=500&q=80" alt="Close-up of clear turquoise water lapping onto sand">
+          </div>
+          <div class="body">
+            <p class="tag">Seychelles</p>
+            <h3>Anse Source d'Argent</h3>
+            <p>Pink granite boulders, shallow warm water, and a low tide reef walk that takes half a day to cross properly.</p>
+            <div class="actions">
+              <button class="chip-btn js-save" aria-pressed="false">Save to trip</button>
+              <button class="chip-btn js-toggle-detail" aria-controls="beach-1-detail" aria-expanded="false">Read more</button>
+            </div>
+            <div class="detail" id="beach-1-detail">
+              Best visited at low tide in the early morning before the day-trip boats arrive from Praslin. Bring reef shoes — the granite is slippery.
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" id="beach-2">
+          <div class="imgs">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=700&q=80" alt="Swirling white silica sand meeting turquoise water at Whitehaven Beach">
+            <img src="https://images.unsplash.com/photo-1519821172141-b5d8342665a8?auto=format&fit=crop&w=500&q=80" alt="Aerial view of a curved white sand beach">
+          </div>
+          <div class="body">
+            <p class="tag">Australia</p>
+            <h3>Whitehaven Beach</h3>
+            <p>Seven kilometres of pure silica sand so fine it squeaks underfoot, best seen from the Hill Inlet lookout first.</p>
+            <div class="actions">
+              <button class="chip-btn js-save" aria-pressed="false">Save to trip</button>
+              <button class="chip-btn js-toggle-detail" aria-controls="beach-2-detail" aria-expanded="false">Read more</button>
+            </div>
+            <div class="detail" id="beach-2-detail">
+              Only reachable by boat or seaplane from Airlie Beach — there's no road access, which is exactly why it stays this clean.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="temples">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-num">Recommendation 02</p>
+          <h2>Temples worth an early alarm</h2>
+          <p>Set an alarm before sunrise for these two — the crowds arrive fast.</p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="dest-card" id="temple-1">
+          <div class="imgs">
+            <img src="https://images.unsplash.com/photo-1600100397608-1e5a5a1e5a1a?auto=format&fit=crop&w=700&q=80" alt="Stone towers of Angkor Wat reflected in a pool at sunrise">
+            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=500&q=80" alt="Carved stone corridor at an Angkor temple">
+          </div>
+          <div class="body">
+            <p class="tag">Cambodia</p>
+            <h3>Angkor Wat</h3>
+            <p>The largest religious monument on earth, and still the most photographed sunrise in Southeast Asia for good reason.</p>
+            <div class="actions">
+              <button class="chip-btn js-save" aria-pressed="false">Save to trip</button>
+              <button class="chip-btn js-toggle-detail" aria-controls="temple-1-detail" aria-expanded="false">Read more</button>
+            </div>
+            <div class="detail" id="temple-1-detail">
+              Gates open at 5am. Walk past the reflecting pool crowd to the second pool on the left for a quieter view of the same shot.
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" id="temple-2">
+          <div class="imgs">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=80" alt="Golden pavilion of Kinkaku-ji reflected in a still pond">
+            <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=500&q=80" alt="Japanese temple garden with maple trees">
+          </div>
+          <div class="body">
+            <p class="tag">Japan</p>
+            <h3>Kinkaku-ji</h3>
+            <p>A gold-leafed pavilion built to sit in its own reflection — small enough to see properly in under an hour.</p>
+            <div class="actions">
+              <button class="chip-btn js-save" aria-pressed="false">Save to trip</button>
+              <button class="chip-btn js-toggle-detail" aria-controls="temple-2-detail" aria-expanded="false">Read more</button>
+            </div>
+            <div class="detail" id="temple-2-detail">
+              Visit on a still, windless morning — the reflection is the whole point, and any breeze breaks it.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="countries">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-num">Recommendation 03</p>
+          <h2>Countries to build a whole trip around</h2>
+          <p>Not a city, not a landmark — these two reward two full weeks each.</p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="dest-card" id="country-1">
+          <div class="imgs">
+            <img src="https://images.unsplash.com/photo-1522547902298-51566e4fb383?auto=format&fit=crop&w=700&q=80" alt="Mount Fuji visible behind a traditional Japanese pagoda">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=500&q=80" alt="Autumn foliage over a Japanese garden pond">
+          </div>
+          <div class="body">
+            <p class="tag">East Asia</p>
+            <h3>Japan</h3>
+            <p>Bullet trains make it easy to string together neon cities, quiet mountain onsens, and centuries-old temple towns.</p>
+            <div class="actions">
+              <button class="chip-btn js-save" aria-pressed="false">Save to trip</button>
+              <button class="chip-btn js-toggle-detail" aria-controls="country-1-detail" aria-expanded="false">Read more</button>
+            </div>
+            <div class="detail" id="country-1-detail">
+              Two weeks is enough for Tokyo, Kyoto, and Hakone without rushing. Buy a JR rail pass before you land — it's cheaper in advance.
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" id="country-2">
+          <div class="imgs">
+            <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=700&q=80" alt="Colourful tiled buildings along a hillside street in Porto">
+            <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?auto=format&fit=crop&w=500&q=80" alt="Coastal cliffs and beach in the Algarve, Portugal">
+          </div>
+          <div class="body">
+            <p class="tag">Southern Europe</p>
+            <h3>Portugal</h3>
+            <p>Compact enough to cover coast to coast in ten days — Porto's tiled streets, Lisbon's hills, and the Algarve's cliffs.</p>
+            <div class="actions">
+              <button class="chip-btn js-save" aria-pressed="false">Save to trip</button>
+              <button class="chip-btn js-toggle-detail" aria-controls="country-2-detail" aria-expanded="false">Read more</button>
+            </div>
+            <div class="detail" id="country-2-detail">
+              Rent a car for the Algarve leg — the smaller beach towns aren't well served by the train line.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-note">© 2026 Wayfarer. A student final project.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

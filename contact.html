@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Wayfarer</title>
+<meta name="description" content="Get in touch with the Wayfarer team or suggest a destination.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Way<span>farer</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <form class="nav-search" role="search" aria-label="Search destinations">
+      <input type="search" placeholder="Search beaches, temples, countries…" aria-label="Search destinations">
+      <button type="submit" aria-label="Run search">→</button>
+    </form>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="search-results"></div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="kicker">Get in touch</p>
+      <h1>Tell us where we're missing.</h1>
+      <p>Question about a destination, a correction to a detail we got wrong, or a place you think belongs on the list — the form below reaches the whole team.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:hello@wayfarer-travel.example">hello@wayfarer-travel.example</a></p>
+        </div>
+        <div>
+          <h3>Response time</h3>
+          <p>We're a small team, so expect a reply within 2–3 days.</p>
+        </div>
+        <div>
+          <h3>Suggesting a destination?</h3>
+          <p>Mention the country, what makes it worth a special trip, and roughly how long you spent there.</p>
+        </div>
+      </div>
+
+      <form class="form-card" id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <p class="error">Please enter your name.</p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <p class="hint">We'll only use this to reply to you.</p>
+          <p class="error">Please enter a valid email address.</p>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <p class="error">Please write a short message (10 characters or more).</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; border:none; cursor:pointer;">Send message</button>
+
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-note">© 2026 Wayfarer. A student final project.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
